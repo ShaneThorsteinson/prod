@@ -1,0 +1,123 @@
+@layer base {
+  .online-chat {}
+
+  .online-chat__content {
+    position: fixed;
+    top: 110%;
+    right: 0;
+    bottom: 0;
+    z-index: 1002;
+    width: 90vw;
+    max-width: 500px;
+    background: #232326;
+    display: flex;
+    flex-direction: column;
+
+    transition: all 0.4s ease;
+  }
+
+  .online-chat--visible .online-chat__content {
+    top: 0;
+  }
+
+  .online-chat__header {
+    cursor: pointer;
+  }
+  
+  .online-chat__bg {
+    background: rgba(49, 49, 55, 0.74);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1001;
+  }
+
+  .online-chat__header {
+    background: #232326;
+    box-shadow: 0px 10px 60px rgba(19, 19, 23, 0.65);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 1px solid  */
+  }
+
+  .online-chat__header-close {
+    color: #55555E;
+    cursor: pointer;
+    margin-left: 16px;
+  }
+  
+  .online-chat__header-close:hover {
+    opacity: 0.8;
+  }
+
+  .online-chat__messages {
+    overflow-y: auto;
+    flex: 1;
+  }
+
+  .online-chat__messages > :not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .online-chat__write {
+    font-family: Roboto;
+    background: #2B2B31;
+    border: 1px solid #34343C;
+    padding: 0 5px 0 16px;
+  }
+
+  .online-chat__write input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+    padding: 10px 0;
+  }
+
+  .online-chat__write input::placeholder {
+    color: #5F5F65;
+  }
+
+  .online-chat__submit {
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4C4C4D;
+  }
+
+  .online-chat__submit:focus {
+    outline: none;
+  }
+
+  .online-chat__content_tournament {
+    top: calc(100% - 56px);
+  }
+
+  @screen xl {
+    .online-chat__content {
+      width: 350px;
+      top: calc(100% - 56px);
+      box-shadow: -3px 0 20px 2px #1b1b1f;
+    }
+
+    .online-chat--visible .online-chat__content {
+      top: 80px;
+    }
+
+    .online-chat__bg {
+      display: none;
+    }
+  }
+}
+
+/* OnlineChatMessage Component */
+@layer base {
+  .online-chat-message {
+    padding: 16px;
+  }
+}

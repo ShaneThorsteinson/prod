@@ -1,0 +1,50 @@
+/* Countdown */
+@layer base {
+  .countdown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        "days divider1 hours"
+        "minutes divider2 seconds";
+  }
+
+  .countdown > div:nth-child(1) { grid-area: days; }
+  .countdown > div:nth-child(2) { grid-area: divider1; }
+  .countdown > div:nth-child(3) { grid-area: hours; }
+  .countdown > div:nth-child(4) { grid-area: divider2; }
+  .countdown > div:nth-child(5) { grid-area: minutes; }
+  .countdown > div:nth-child(6) { grid-area: divider3; display: none; }
+  .countdown > div:nth-child(7) { grid-area: seconds; }
+
+  .countdown-divider {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .countdown-divider::before, .countdown-divider::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #808087;
+    border-radius: 50%;
+  }
+
+  @screen md {
+    .countdown {
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas:
+      "days divider1 hours divider2 minutes divider3 seconds";
+    }
+    .countdown > div:nth-child(6) {
+      display: flex;
+    }
+  }
+}

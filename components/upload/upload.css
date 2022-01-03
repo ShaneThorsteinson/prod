@@ -1,0 +1,11 @@
+/* Upload Component */
+@layer base {
+  .upload {
+    background: #2B2B31;
+    display: block;
+    padding: 10px;
+    color: #5F5F65;
+    border: #34343C;
+    font-style: italic; 
+  }
+}

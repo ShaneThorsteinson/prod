@@ -1,0 +1,50 @@
+@layer base {
+  .ui-toast {
+    padding: 12px 18px;
+    background: #2B2B31;
+    border: 1px solid #33333A;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ui-toast__close {
+    color: white;
+    opacity: 0.3;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: -10px;
+  }
+
+  .ui-toast__close:hover {
+    opacity: 0.5;
+  }
+  
+  .ui-toast__icon {
+    margin-right: 18px;
+  }
+
+  .ui-toast__title {
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .ui-toast__content {
+    flex: 1;
+    font-family: Roboto;
+    color: white;
+    font-size: 13px;
+  }
+
+  /* Type Success */
+  .ui-toast--success {
+    box-shadow: inset 2px 0px 0px #26806F;
+    border-left: 0;
+  }
+
+  /* Type Error */
+  .ui-toast--error {
+    background: rgba(198, 53, 53, 0.4);
+    border: 1px solid #C63535;
+  }
+}

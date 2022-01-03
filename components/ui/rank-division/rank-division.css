@@ -1,0 +1,43 @@
+/* Rank Division Component */
+@layer base {
+  .ui-rank-division {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .ui-rank-division__icon {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+
+  .ui-rank-division__icon img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ui-rank-division__name {
+    font-family: Roboto;
+    color: #CFCFD2;
+  }
+
+  .ui-rank-division--sm .ui-rank-division__name {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .ui-rank-division--sm .ui-rank-division__icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .ui-rank-division--lg .ui-rank-division__icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .ui-rank-division--lg .ui-rank-division__icon {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,29 @@
+@layer base {
+  .article-cover {
+    position: relative;
+  }
+
+  .article-cover img {
+    width: 100%;
+  }
+
+  .article-cover::before, .article-cover::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .article-cover::before {
+    content: '';
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+  }
+
+  .article-cover::after {
+    content: '';
+    background: linear-gradient(180deg, rgba(12, 14, 18, 0) 21.67%, rgba(7, 8, 9, 0.85) 83.33%);
+    z-index: 2;
+  }
+}

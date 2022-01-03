@@ -1,0 +1,39 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  display: grid;
+  color:#C63536;
+  background: radial-gradient(circle 16px,currentColor 94%,#0000);
+  -webkit-mask:radial-gradient(circle 5px,#0000 90%,#000);
+  animation: spinner 1.5s infinite linear;
+}
+
+.spinner:before,
+.spinner:after {
+  content: "";
+  grid-area: 1/1;
+  background: 
+    radial-gradient(farthest-side at bottom right,currentColor 94%,#0000) top    right, 
+    radial-gradient(farthest-side at top    left ,currentColor 94%,#0000) bottom left;
+  background-size: 40% 45%;
+  background-repeat: no-repeat;
+  -webkit-mask: 
+    radial-gradient(60% 100% at bottom right,#0000 94%,#000) top    right, 
+    radial-gradient(60% 100% at top    left ,#0000 94%,#000) bottom left;
+  -webkit-mask-size: 40% 45%;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.spinner:after {
+  transform: rotate(90deg);
+}
+
+@keyframes spinner { 
+  100% { transform: rotate(1turn) }
+}

@@ -1,0 +1,97 @@
+/* Label Component */
+
+@layer base {
+  .ui-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 11px;
+    color: #CFCFD2;
+    line-height: 1;
+    font-family: Roboto;
+  }
+
+  .ui-label--rounded {
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0 8px;
+    height: 25px;
+  }
+  
+  .ui-label__icon {
+    margin-right: 4px;
+    color: #E56767;
+  }
+
+  .ui-label__icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .ui-label__text {
+    display: inline-flex;
+  }
+}
+
+/* Label Group */
+@layer base {
+  .ui-label-group > :not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+/* Label Stats */
+
+@layer base {
+  .ui-label-stats {
+    display: inline-flex;
+    font-family: Roboto;
+    font-size: 11px;
+    line-height: 1 !important;
+    align-items: center;
+    color: #CFCFD2;
+  }
+
+  .ui-label-stats--rounded {
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.4em 0.8em;
+  }
+  
+  .ui-label-stats__icon {
+    width: 1.1em;
+    height: 1.1em;
+    color: #FFA91E;
+  }
+  
+  .ui-label-stats__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ui-label-stats__w {
+    color: #29C2A7;
+  }
+  
+  .ui-label-stats__l {
+    color: #E56767;
+  }
+}
+
+/* LabelCaptain Component */
+@layer base {
+  .ui-label-captain {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    font-size: 10px;
+    font-family: Roboto;
+    font-weight: 700;
+    padding: 6px 10px;
+    color: #FFA91E;
+    text-transform: uppercase;
+    display: flex;
+  }
+
+  .ui-label-captain img {
+    margin-right: 4px;
+  }
+}

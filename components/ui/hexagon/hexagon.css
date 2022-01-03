@@ -1,0 +1,62 @@
+@layer base {
+  .ui-hexagon {
+    position: relative;
+    display: inline-flex;
+  }
+  
+  .ui-hexagon__icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .ui-hexagon__status {
+    box-sizing: content-box;
+    position: absolute;
+    background: white;
+    border: 3px solid #232326;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: 15%;
+    right: 0px;
+  }
+
+  .ui-hexagon__status--on {
+    background: #29C2A7;
+  }
+
+  .ui-hexagon__status--off {
+    background: #E66767;
+  }
+}
+
+/* HexagonSelect Component */
+@layer base {
+  .ui-hexagon-select {
+    display: flex;
+  }
+
+  .ui-hexagon-select__item {
+    position: relative;
+    display: flex;
+  }
+
+  .ui-hexagon-select__item--selected::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background: url("data:image/svg+xml,%3Csvg width='20' height='15' viewBox='0 0 20 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.64164 6.01766L1.64162 6.01768C0.919482 6.64961 0.919429 7.7303 1.64165 8.36224L6.84162 12.9122C6.84163 12.9122 6.84164 12.9122 6.84165 12.9122C7.49341 13.4826 8.50657 13.4825 9.1583 12.9123L9.15834 12.9123L18.3583 4.86224L18.3584 4.86221C19.0805 4.23028 19.0806 3.14959 18.3583 2.51766L17.227 1.52771L17.227 1.5277C16.5753 0.957434 15.562 0.957434 14.9103 1.5277L7.99999 7.5742L5.08971 5.02773C5.0897 5.02772 5.08969 5.02771 5.08967 5.02769C4.43794 4.4574 3.42471 4.45741 2.77298 5.02771C2.77298 5.02771 2.77297 5.02772 2.77296 5.02773L1.64164 6.01766Z' fill='%2329C2A7' stroke='%23232326' stroke-width='1.8'/%3E%3C/svg%3E%0A") no-repeat center;
+    position: absolute;
+    right: -4px;
+    top: 0px;
+    pointer-events: none;
+  }
+}

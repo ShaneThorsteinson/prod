@@ -1,0 +1,65 @@
+@layer base {
+  .ui-table {
+    font-family: Roboto;
+  }
+
+  .ui-table__wrap {
+    overflow: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+  }
+
+  .ui-table table {
+    border-spacing: 0;
+    width: 100%;
+  }
+
+  .ui-table thead th {
+    text-align: left;
+    font-size: 13px;
+    color: #5F5F65;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 8px 16px;
+  }
+
+  .ui-table tbody tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .ui-table tbody td {
+    padding: 12px 16px;
+    color: #CFCFD2;
+  }
+
+  /* Pagination */
+  .ui-table__pagination {
+    display: flex;
+    margin-top: 8px;
+  }
+  .ui-table__pagination li {
+    padding: 8px 16px;
+    color: #5F5F65;
+    cursor: pointer;
+  }
+
+  .ui-table__pagination li.--active {
+    background: rgba(255, 255, 255, 0.02);
+    color: #CFCFD2;
+  }
+
+  /* Footer */
+  .ui-table__footer {
+    margin-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .ui-table__total {
+    color: #5F5F65;
+  }
+}

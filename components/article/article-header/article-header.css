@@ -1,0 +1,51 @@
+@layer base {
+  .article-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-header__date {
+    font-family: Roboto;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #9E9EA9;
+    margin-right: 10px;
+  }
+
+  .article-header__title {
+    font-weight: 600;
+    font-size: 28px;
+    color: #FFFFFF;
+  }
+
+  .article-header__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .article-header__author {
+    color: #CFCFD2;
+    font-family: Roboto;
+    font-size: 15px;
+  }
+
+  .article-header__share {
+    font-size: 13px;
+    line-height: 18px;
+    color: #5F5F65;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  
+  .article-header__share > *:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  @screen lg {
+    .article-header__title {
+      font-size: 34px;
+    }
+  }
+}

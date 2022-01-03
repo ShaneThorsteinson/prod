@@ -1,0 +1,33 @@
+/* Section Component */
+@layer base {
+  .section {
+    margin-bottom: 27px;
+  }
+}
+
+/* Section Header Component */
+@layer base {
+  .section-header {
+    display: flex; 
+    font-size: 1.125rem;
+   }
+   
+   .section-header__title {
+     position: relative;
+     white-space: nowrap;
+   }
+   
+   .section-header__title-line {
+     height: 1px;
+     background: linear-gradient(95deg, rgba(179, 177, 220, 0.2) 0%, transparent 100%);
+     width: 100%;
+     margin-left: 16px;
+   }
+}
+
+/* Section Body Component */
+@layer base {
+  .section-body {
+    margin-top: 8px;
+  }
+}

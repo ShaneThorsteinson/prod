@@ -1,0 +1,16 @@
+@layer base {
+  .ui-tooltip-content--popover {
+    background: #1B1B1F;
+    border: 1px solid #2A2A2D;
+    box-shadow: 0px 18px 23px rgba(0, 0, 0, 0.19);
+  }
+
+  .ui-tooltip-content--popover .ui-tooltip-icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 10px 8px 0;
+    border-color: transparent #2A2A2D transparent transparent;
+    position: absolute;
+  }
+}

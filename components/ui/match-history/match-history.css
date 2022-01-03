@@ -1,0 +1,25 @@
+@layer base {
+  .ui-match-history {
+    font-family: Roboto;
+    gap: 1px;
+    display: flex;
+  }
+
+  .ui-match-history > * {
+    font-size: 11px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .ui-match-history__w {
+    background: #29C2A7;
+  }
+
+  .ui-match-history__l {
+    background: #E56767;
+  }
+}

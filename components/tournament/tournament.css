@@ -1,0 +1,74 @@
+/* TournamentHeader Component */
+@layer base {
+  .tournament-header {
+    padding: 20px 0;
+    background: linear-gradient(270deg, rgba(35, 35, 38, 0) 0.73%, rgba(35, 35, 38, 0.8) 24.56%, rgba(35, 35, 38, 0.8) 65.83%, rgba(35, 35, 38, 0) 100%);
+    position: relative;
+  }
+  
+  .tournament-header::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -53px;
+    height: 53px;
+    display: block;
+    background:
+      linear-gradient(270deg, rgba(42, 42, 45, 0) 0.73%, rgba(42, 42, 45, 0.8) 24.56%, rgba(42, 42, 45, 0.8) 65.83%, rgba(42, 42, 45, 0) 100%),
+      linear-gradient(90deg, rgba(41, 41, 56, 0) 0%, #323238 30%, rgba(50, 50, 56, 0) 100%);
+    background-size: 100%, 100% 5px;
+    background-repeat: no-repeat;
+    background-position: center, bottom;
+    pointer-events: none;
+  }
+
+  .tournament-header__cover {
+    text-align: center;
+  }
+
+  .tournament-header__cover-wrap {
+    height: 120px;
+    width: 98px;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tournament-header__cover-wrap::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 3px solid rgba(255, 255, 255, 0.35);
+    pointer-events: none;
+  }
+  
+  .tournament-header__cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @screen md {
+    .tournament-header__cover-wrap {
+      height: 160px;
+      width: 130px;
+    }
+    .tournament-header__cover {
+      height: 100px;
+    }
+  }
+
+  @screen lg {
+    .tournament-header {
+      padding-bottom: 26px;
+    }
+  }
+}
+
+.tournament-past {
+  background: rgba(0, 0, 0, 0.8) url(/assets/images/tournament-past.svg) no-repeat center bottom;
+}

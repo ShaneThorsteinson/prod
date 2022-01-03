@@ -1,0 +1,91 @@
+
+/* Components */
+@import '../components/hero/hero.css';
+@import '../components/article/article-card/article-card.css';
+@import '../components/article/article-header/article-header.css';
+@import '../components/article/article-cover/article-cover.css';
+@import '../components/article/article-body/article-body.css';
+@import '../components/header/header.css';
+@import '../components/section/section.css';
+@import '../components/tournament/tournament.css';
+@import '../components/twitter/twitter.css';
+@import '../components/team/team.css';
+@import '../components/footer/footer.css';
+@import '../components/profile/profile-header/profile-header.css';
+@import '../components/profile/profile-avatar/profile-avatar.css';
+@import '../components/page/page.css';
+@import '../components/notifications/notifications.css';
+@import '../components/online-chat/online-chat.css';
+@import '../components/upload/upload.css';
+@import '../components/countdown/countdown.css';
+
+/* UI Components */
+@import '../components/ui/button/button.css';
+@import '../components/ui/rank-division/rank-division.css';
+@import '../components/ui/label/label.css';
+@import '../components/ui/hexagon/hexagon.css';
+@import '../components/ui/block/block.css';
+@import '../components/ui/divider/divider.css';
+@import '../components/ui/input/input.css';
+@import '../components/ui/checkbox/checkbox.css';
+@import '../components/ui/avatar/avatar.css';
+@import '../components/ui/tabs/tabs.css';
+@import '../components/ui/modal/modal.css';
+@import '../components/ui/list/list.css';
+@import '../components/ui/select/select.css';
+@import '../components/ui/table/table.css';
+@import '../components/ui/collapse/collapse.css';
+@import '../components/ui/member/member.css';
+@import '../components/ui/radio/radio.css';
+@import '../components/ui/tooltip/tooltip.css';
+@import '../components/ui/popover/popover.css';
+@import '../components/ui/message/message.css';
+@import '../components/ui/match-history/match-history.css';
+@import '../components/ui/dropdown/dropdown.css';
+@import '../components/ui/toast/toast.css';
+
+/* Custom */
+@import './pages.css';
+@import './sections.css';
+
+/* Animations */
+@import './animations.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  
+  body {
+    font-family: 'Titillium Web';
+    background-color: theme('colors.dark.900');
+    background-image: url(/assets/images/bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+}
+
+/* Custom Scrollbar */
+@layer base {
+  .custom-scroll::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #2B2B31;
+  }
+  
+  .custom-scroll::-webkit-scrollbar
+  {
+    width: 3px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .custom-scroll::-webkit-scrollbar-thumb
+  {
+    background-color: #386AB5;
+  }
+}

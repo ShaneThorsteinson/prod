@@ -1,0 +1,36 @@
+@layer base {
+  .profile-header {
+    padding: 20px 0;
+    background: linear-gradient(270deg, rgba(35, 35, 38, 0) 0.73%, rgba(35, 35, 38, 0.8) 24.56%, rgba(35, 35, 38, 0.8) 65.83%, rgba(35, 35, 38, 0) 100%);
+    position: relative;
+  }
+  
+  .profile-header::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -53px;
+    height: 53px;
+    display: block;
+    background:
+      linear-gradient(270deg, rgba(42, 42, 45, 0) 0.73%, rgba(42, 42, 45, 0.8) 24.56%, rgba(42, 42, 45, 0.8) 65.83%, rgba(42, 42, 45, 0) 100%),
+      linear-gradient(90deg, rgba(41, 41, 56, 0) 0%, #323238 30%, rgba(50, 50, 56, 0) 100%);
+    background-size: 100%, 100% 5px;
+    background-repeat: no-repeat;
+    background-position: center, bottom;
+    pointer-events: none;
+  }
+
+  @screen md {
+    .profile-header {
+      padding: 16px 0 10px;
+    }
+  }
+
+  @screen lg {
+    .profile-header {
+      padding-bottom: 0;
+    }
+  }
+}

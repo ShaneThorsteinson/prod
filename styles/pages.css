@@ -1,0 +1,96 @@
+@layer base {
+  @screen md {
+    .page-signup__container {
+      background: url("/assets/images/soldier1.png") no-repeat;
+      background-size: contain;
+      background-position-y: 60px;
+    }
+    
+    .page-signin__container {
+     background: url("/assets/images/signin-bg.png") no-repeat;
+     background-size: contain;
+     background-position-y: 60px;
+    }
+    
+    .page-restore__container {
+     background: url("/assets/images/restore-password-bg.png") no-repeat;
+     background-size: contain;
+     background-position: right 60px;
+    }
+
+    .page-findscrim-empty__container {
+      position: relative;
+    }
+    .page-findscrim-empty__container::before {
+      content: '';
+      z-index: -1;
+      background: url("/assets/images/soldier5.png") no-repeat;
+      background-size: contain;
+      background-position: right top;
+      position: absolute;
+      top: 0;
+      right: -150px;
+      width: 396px;
+      height: 710px;
+      pointer-events: none;
+    }
+
+    .bg-soldier--5 {
+      background: url("/assets/images/soldier1.png") no-repeat;
+      background-size: contain;
+      background-position-y: 60px;
+    }
+  }
+}
+
+/* Page Profile */
+@layer base {
+  .tab-profile > .ui-tabs-nav {
+    background: none;
+  }
+  @screen lg {
+    .tab-profile > .ui-tabs-nav {
+      padding-left: 170px;
+    }
+  }
+}
+
+/* Page Profile */
+@layer base {
+  .tab-tournament > .ui-tabs-nav {
+    background: none;
+  }
+  
+  @screen md {
+    .tab-tournament > .ui-tabs-nav {
+      padding-left: 148px;
+    }
+  }
+
+  @screen lg {
+    .tab-tournament > .ui-tabs-nav {
+      padding-left: 156px;
+    }
+  }
+}
+
+/* Page About Us */
+@layer base {
+  .page-about__our-team {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg width='712px' height='490' viewBox='0 0 712 490' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.15'%3E%3Cpath d='M425.46 0.000939368L2.59176e-05 296.464L0.000949336 490.001L712 0.000914317L425.46 0.000939368Z' fill='url(%23paint0_linear)'/%3E%3Cpath d='M180.665 0.000960769L-2.58252e-05 118.965L0.00253072 319.001L467 0.000935737L180.665 0.000960769Z' fill='url(%23paint1_linear)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='537.74' y1='223.448' x2='245.051' y2='521.897' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23909097' stop-opacity='0.2'/%3E%3Cstop offset='0.9946' stop-color='%231D1D1F' stop-opacity='0'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='209.314' y1='-20.2669' x2='364.026' y2='292.99' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23909097' stop-opacity='0.26'/%3E%3Cstop offset='0.9946' stop-color='%231D1D1F' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg width='712px' height='490' viewBox='0 0 712 490' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.15' transform='matrix(1, 0, 0, 1, -1208, 0)'%3E%3Cpath d='M1494.54 -3.71949e-05L1920 296.463L1920 490L1208 -6.2245e-05L1494.54 -3.71949e-05Z' fill='url(%23paint0_linear)'/%3E%3Cpath d='M1739.34 -1.57939e-05L1920 118.964L1920 319L1453 -4.08255e-05L1739.34 -1.57939e-05Z' fill='url(%23paint1_linear)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='1382.26' y1='223.447' x2='1674.95' y2='521.896' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23909097' stop-opacity='0.2'/%3E%3Cstop offset='0.9946' stop-color='%231D1D1F' stop-opacity='0'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='1710.69' y1='-20.2679' x2='1555.97' y2='292.99' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23909097' stop-opacity='0.26'/%3E%3Cstop offset='0.9946' stop-color='%231D1D1F' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+  }
+}
+
+/* Page Membership */
+@layer base {
+  @screen lg {
+    .page-membership__container, .page-tournaments__container {
+      background: url("/assets/images/soldier2.png") no-repeat;
+      background-size: 538px 799px;
+      background-position: right 0;
+    }
+  }
+}

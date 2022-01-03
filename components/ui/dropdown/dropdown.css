@@ -1,0 +1,40 @@
+@layer base {
+  .ui-tooltip-content--dropdown {
+    background: #1B1B1F;
+    box-shadow: 0px 18px 23px rgba(0, 0, 0, 0.19);
+    border: 1px solid #1B1B1F;
+  }
+
+  .ui-tooltip-content--dropdown .ui-tooltip-icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 10px 8px 0;
+    border-color: transparent #1B1B1F transparent transparent;
+    position: absolute;
+  }
+
+  .ui-dropdown {
+    padding: 0 16px;
+  }
+}
+
+/* DropdownItem Component */
+@layer base {
+  .ui-dropdown .ui-dropdown-item:not(:first-child) {
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .ui-dropdown-item {
+    font-weight: bold;
+    text-align: right;
+    color: #A7A7AD;
+    cursor: pointer;
+    padding: 14px;
+    white-space: nowrap;
+  }
+
+  .ui-dropdown-item:hover {
+    color: white;
+  }
+}

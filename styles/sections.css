@@ -1,0 +1,24 @@
+@layer base {
+  .section-news-grid {
+    position: relative;
+    margin-top: 16px;
+  }
+
+  .section-news-grid__col > div:last-child {
+    pointer-events: none;
+  }
+
+  .section-news-grid__col > div:last-child a::after {
+    background: linear-gradient(180deg, rgba(27, 27, 31, 0.91) 0%, #1B1B1F 59.58%);
+    z-index: 30;
+  }
+
+  .section-news-grid__loadmore {
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+}

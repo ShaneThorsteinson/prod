@@ -1,0 +1,48 @@
+@layer base {
+  .notifications {
+    margin: 0 8px;
+    padding: 0 8px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    color: #515159;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .notifications__icon {
+    position: relative;
+  }
+
+  .notifications--unread .notifications__icon::before {
+    content: '';
+    box-sizing: content-box;
+    background: #E66767;
+    border: 2px solid #2D2D33;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+  }
+}
+
+/* NotificationsDropdown */
+
+@layer base {
+  .notifications-dropdown {
+    width: 370px;
+    height: 238px;
+    overflow: auto;
+    overscroll-behavior: contain;
+  }
+
+  .notifications-dropdown a {
+    color: #C63535;
+  }
+
+  .notifications-dropdown > *:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}

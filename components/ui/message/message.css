@@ -1,0 +1,75 @@
+@layer base {
+  .ui-message {
+    padding: 16px;
+    background: #2B2B31;
+    border: 1px solid #33333A;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .ui-message::before {
+    content: '';
+    width: 0;
+    height: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 8px 0px 8px 8px;
+    border-color: transparent;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .ui-message__close {
+    color: #CFCFD2;
+    opacity: 0.2;
+    cursor: pointer;
+    padding: 0 10px;
+    margin-left: 5px;
+    margin-right: -10px;
+  }
+
+  .ui-message__close:hover {
+    opacity: 0.5;
+  }
+  
+  .ui-message__icon {
+    margin-right: 8px;
+  }
+
+  .ui-message__content {
+    flex: 1;
+    font-family: Roboto;
+    color: white;
+  }
+
+  /* Type Success */
+  .ui-message--success::before {
+    border-left-color: #26806F;
+  }
+
+  .ui-message--success {
+    box-shadow: inset 2px 0px 0px #26806F;
+    border-left: 0;
+  }
+
+  /* Type Error */
+  .ui-message--error::before {
+    border-left-color: #c63535;
+  }
+
+  .ui-message--error {
+    box-shadow: inset 2px 0px 0px #c63535;
+    border-left: 0;
+  }
+
+  /* Type Warning */
+  .ui-message--warning::before {
+    border-left-color: #ffa24b;
+  }
+
+  .ui-message--warning {
+    box-shadow: inset 2px 0px 0px #ffa24b;
+    border-left: 0;
+  }
+}

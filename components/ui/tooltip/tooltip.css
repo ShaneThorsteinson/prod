@@ -1,0 +1,50 @@
+@layer base {
+  .ui-tooltip {
+    width: max-content;
+    display: inline-block;
+  }
+
+  .ui-tooltip-content {
+    position: absolute;
+    width: auto;
+    z-index: 1500;
+  }
+
+  .ui-tooltip-content--default {
+    font-family: Roboto;
+    font-size: 11px;
+    color: #CFCFD2;
+    padding: 5px 10px;
+    background: rgba(40, 40, 47, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+    pointer-events: none;
+  }
+
+  .ui-tooltip-content--default::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: rgba(40, 40, 47, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    width: 8px;
+    height: 8px;
+    bottom: -5px;
+    left: calc(50% - 4px);
+    transform: rotate(45deg);
+    border-top: 0;
+    border-left: 0;
+  }
+
+  .ui-tooltip-content--fixed {
+    position: fixed;
+  }
+
+  .ui-tooltip-content__inner {
+    position: relative;
+  }
+
+  .ui-tooltip-content--default .ui-tooltip-content__inner {
+    position: relative;
+  }
+}
